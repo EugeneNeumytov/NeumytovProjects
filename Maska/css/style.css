@@ -262,8 +262,52 @@ img{
 .effect{
     background: #fff;
 }
+.effect-box{
+    padding: 35px 0;
+}
+.effect-text{
+    position: relative;
+    left: 30px;
+}
+.effect-text h2{
+    font-size: 30px;
+    color: #aad400;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.effect-list ul li{
+    list-style: none;
+}
+.effect-list ul li:before{
+    content: "\2714\0020";
+}
 .mask-footer{
     background: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     flex: 0 0 auto;
+}
+.footer-links{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer-links a{
+    color: #fc6e29;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.footer-text {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-text p{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: -5px;
 }
