@@ -1,0 +1,19 @@
+@media(max-width: 1199px){
+    .header-menu ul li {
+        margin-right: 0;
+    }
+    .mask-img{
+        top: -100px;
+        left: 100px;
+    }
+    .effect-box {
+        padding: 25px 0;
+    }
+    .effect-text h2{
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .review-text{
+        font-size: 14px;
+    }
+}

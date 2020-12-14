@@ -103,6 +103,8 @@ img{
 .green-box{
     background: #aad400;
     padding: 30px 0;
+    position: relative;
+    z-index: 10;
 }
 .green-box-img{
     max-width: 364px;
@@ -164,7 +166,7 @@ img{
     margin: 0 auto;
 }
 .green-form input{
-    width: 430px;
+    width: 100%;
     margin-bottom: 15px;
     padding: 7px 5px;
     border-radius: 5px;
@@ -174,7 +176,8 @@ img{
     background: #fc6e29;
     color: #fff;
     font-size: 38px;
-    padding: 4px 70px;
+    width: 100%;
+    padding: 4px 0;
     border-radius: 10px;
 }
 .white-block{
@@ -229,30 +232,34 @@ img{
     text-align: center;
     margin-bottom: 35px;
 }
+.circle-boxes{
+    width: 96%;
+    margin: 0 auto;
+}
 .review-circle{
     position: relative;
-    max-width: 300px;
-    height: 300px;
     width: 100%;
+    padding-top: 100%;
     margin: 0 auto;
     border: 1px solid #fff;
     border-radius: 50%;
     background: #fff;
     color: #000;
 }
-.reviw-name{
-    color: #fc6e29;
-    max-width: 130px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 60px;
-}
 .review-text{
-    max-width: 275px;
-    width: auto;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    line-height: 22px;
+    line-height: 20px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+}
+.review-text h6{
+    color: #fc6e29;
+    text-align: center;
+    font-size: 16px;
 }
 .review-img{
     position: absolute;
