@@ -17,3 +17,136 @@
         font-size: 14px;
     }
 }
+@media(max-width: 991px){
+    .header-menu ul li a{
+        font-size: 12px;
+    }
+    .header-phone{
+        font-size: 20px;
+    }
+    .mask-adv-desc {
+        padding: 20px 0;
+    }
+    .mask-adv-box h2 {
+        font-size: 45px;
+    }
+    .best-text {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+    .face-mask{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .green-box{
+        padding: 20px 0;
+    }
+    .green-box-form {
+        margin-top: 0;
+        width: 95%;
+    }
+    .green-box-form h2{
+        font-size: 22px;
+        letter-spacing: 0;
+    }
+    .green-box-price{
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+    .time{
+        font-size: 12px;
+        top: -5px;
+    }
+    .time h3{
+        font-size: 36px;
+        margin-bottom: -6px;
+    }
+    .white-block-forget {
+        padding-top: 25px;
+        padding-bottom: 7px;
+        left: 20px;
+    }
+    .white-block-forget h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .white-block-img {
+        padding-top: 42px;
+    }
+    .white-block-carrot {
+        padding-top: 25px;
+        padding-bottom: 7px;
+        left: -20px;
+    }
+    .white-block-carrot h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .white-text {
+        font-size: 15px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .review {
+        padding: 20px 0;
+    }
+    .review h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .review-text {
+        font-size: 10px;
+        line-height: 12px;
+        top: 60px;
+    }
+    .review-text h6 {
+        font-size: 12px;
+    }
+    .review-img img{
+        max-width: 80%;
+    }
+    .effect-box {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    .effect-text h2 {
+        font-size: 20px;
+        margin-bottom: 13px;
+    }
+    .effect-list{
+        font-size: 12px;
+    }
+    .mask-footer{
+        padding: 20px 0;
+    }
+}
+@media(max-width: 767px) {
+    .navbar-toggler{
+        display: inherit;
+    }
+    .mask-adv-desc {
+        padding: 10px 0;
+    }
+    .mask-adv-box{
+        left: 20px;
+    }
+    .mask-adv-box h2 {
+        font-size: 24px;
+    }
+    .best-text {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .face-mask {
+        font-size: 10px;
+        margin-bottom: 10px;
+        line-height: 14px;
+    }
+    .mask-list{
+        font-size: 13px;
+    }
+    .mask-img {
+        top: -65px;
+        left: 75px;
+    }
+}

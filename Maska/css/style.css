@@ -127,6 +127,7 @@ img{
     margin: 0 auto;
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: center;
 }
 .old-price{
     font-size: 24px;
@@ -140,25 +141,29 @@ img{
     margin-bottom: 25px;
 }
 .circle-box{
-    max-width: 85px;
-    height: 85px;
+    position: relative;
     width: 100%;
+    padding-top: 100%;
     border: 1px solid #fc6e29;
     border-radius: 50%;
     background: #fc6e29;
     color: #fff;
 }
-.circle-box h2{
+.time{
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.time h3{
     font-size: 48px;
     text-align: center;
     font-weight: 100;
     margin-bottom: -5px;
-}
-.time{
-    font-size: 14px;
-    max-width: 40px;
-    width: 100%;
-    margin: 0 auto;
 }
 .green-form{
     max-width: 420px;
@@ -292,7 +297,7 @@ img{
 }
 .mask-footer{
     background: #fff;
-    padding: 40px 0;
+    padding: 20px 0;
     flex: 0 0 auto;
 }
 .footer-links{
@@ -300,11 +305,11 @@ img{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .footer-links a{
     color: #fc6e29;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 auto;
 }
 .footer-text {
@@ -313,8 +318,8 @@ img{
     margin: 0 auto;
 }
 .footer-text p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: -5px;
+    margin-bottom: 0;
 }
