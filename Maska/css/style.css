@@ -40,6 +40,9 @@ img{
     font-size: 18px;
     font-weight: lighter;
 }
+.header-menu ul li a:hover{
+    text-decoration: underline;
+}
 .header-art{
     font-size: 18px;
     margin-left: 30px;
@@ -97,7 +100,8 @@ img{
 }
 .mask-img{
     position: absolute;
-    top: 214px;
+    top: -70px;
+    left: 60px;
     z-index: 1;
 }
 .green-box{
