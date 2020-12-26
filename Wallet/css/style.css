@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+    font-family: 'HelveticaNeueCyr';
+}
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.wrap-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    padding: 35px 0;
+    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
+    background-color: rgba(140, 0, 2, 1);
+    background-size: 40px 40px;
+    background-position: center center;
+}
+.header-menu .navbar-brand,
+.header-menu .navbar-toggler{
+    display: none;
+}
+.header-menu ul li a{
+    color: #ffd800;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: -7px;
+}
+.header-menu ul li a:hover{
+    text-decoration: underline;
+}
+.header-art{
+    color: #fff;
+    font-size: 14px;
+    margin-left: -40px;
+    margin-top: 10px;
+}
+.header-phone{
+    margin-left: -37px;
+    margin-top: -12px;
+}
+.phone{
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+}
+.all-day{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -5px;
+}
+.toothed-border{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background-image:
+            linear-gradient(white, white),
+            linear-gradient(to bottom right, transparent 50.5%, white 50.5%),
+            linear-gradient(to bottom left, transparent 50.5%, white 50.5%),
+            linear-gradient(to top right, transparent 50.5%, white 50.5%),
+            linear-gradient(to top left, transparent 50.5%, white 50.5%);
+    background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+    background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-clip: padding-box, border-box, border-box, border-box, border-box;
+    background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+.white-block-1{
+    position: relative;
+    padding: 45px 0;
+}
+.white-block-1-text h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #230000;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.text{
+    color: #230000;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.wallet-photo{
+    position: relative;
+    margin-top: 40px;
+}
+.wallet-price{
+    position: absolute;
+    top: 35px;
+    left: 164px;
+}
+.old-price{
+    color: white;
+    font-size: 16px;
+    text-decoration: line-through;
+    text-align: center;
+}
+.new-price{
+    color: #ffd800;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.square-section{
+    padding: 40px 0;
+    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
+    background-color: rgba(140, 0, 2, 1);
+    background-size: 40px 40px;
+    background-position: center center;
+}
+.form-block{
+    background: #d70002;
+    border: 1px solid #d70002;
+    border-radius: 5px;
+    max-width: 380px;
+    margin-left: 85px;
+    padding: 20px 0;
+}
+.form-container{
+    max-width: 340px;
+    margin: 0 20px;
+}
+.form-container h2{
+    color: #fff;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.white-block-circles{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.circle-box{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+}
+.time{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #900002;
+    text-align: center;
+    font-size: 14px;
+}
+.time h3{
+    font-size: 36px;
+    margin-bottom: -10px;
+}
+.form-box input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #900002;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.form-box button{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #900002;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #ffd800;
+}
+.square-section-text{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    line-height: 30px;
+}
+.white-block-2{
+    position: relative;
+    padding: 45px 0;
+}
+.white-block-2 h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.white-block-2-text{
+    color: #230000;
+    font-weight: 300;
+    line-height: 20px;
+}
+.white-block-2-video{
+    margin: 10px 0;
+    position: relative;
+}
+.white-block-2-button{
+    max-width: 120px;
+    width: 100%;
+    margin: 0 auto;
+    background: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+.white-block-2-button a{
+    color: white;
+    font-size: 24px;
+    letter-spacing: -.5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.advantages{
+    padding: 40px 0;
+    background: #1f0000;
+    background-image: url("../img/fon.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+.advantages h2{
+    color: #ffd800;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.advantages-list ul li{
+    list-style: url("../img/arrow.png");
+    color: #fff;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.advantages-photo{
+    max-width: 365px;
+    margin-left: 100px;
+}
+.advantages-photo-1{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.advantages-photo-2{
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.white-block-3{
+    position: relative;
+    padding: 35px 0;
+}
+.white-block-3-text{
+    color: #230000;
+    font-weight: 300;
+    font-style: italic;
+}
+.reviews{
+    padding: 40px 0;
+    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
+    background-color: rgba(140, 0, 2, 1);
+    background-size: 40px 40px;
+    background-position: center center;
+}
+.reviews h2{
+    color: #ffd800;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.reviews-content-box{
+    margin-top: 40px;
+}
+.reviews-content-text .reviews-name{
+    color: #ffd800;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.reviews-content-text .name-text{
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+    line-height: 20px;
+}
+.wallet-footer{
+    padding: 20px 0;
+    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
+    background-color: rgba(140, 0, 2, 1);
+    background-size: 40px 40px;
+    background-position: center center;
+    flex: 0 0 auto;
+}
+.footer-links{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.footer-links a{
+    color: #ffd800;
+    font-size: 24px;
+    margin: 0 auto;
+}
+.footer-text {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-text p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+}
