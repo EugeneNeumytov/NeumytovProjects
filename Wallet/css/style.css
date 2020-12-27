@@ -13,20 +13,26 @@ img{
     max-width: 100%;
 }
 .page{
+    max-width: 2000px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+.for-page{
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 .wrap-container{
     max-width: 960px;
     margin: 0 auto;
 }
-.header{
-    padding: 35px 0;
+.cell-background{
     background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
     background-color: rgba(140, 0, 2, 1);
     background-size: 40px 40px;
     background-position: center center;
+}
+.header{
+    padding: 35px 0;
 }
 .header-menu .navbar-brand,
 .header-menu .navbar-toggler{
@@ -51,7 +57,7 @@ img{
     margin-left: -37px;
     margin-top: -12px;
 }
-.phone{
+.header-phone .phone{
     color: #fff;
     font-size: 24px;
     font-weight: normal;
@@ -123,10 +129,6 @@ img{
 }
 .square-section{
     padding: 40px 0;
-    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
-    background-color: rgba(140, 0, 2, 1);
-    background-size: 40px 40px;
-    background-position: center center;
 }
 .form-block{
     background: #d70002;
@@ -291,10 +293,6 @@ img{
 }
 .reviews{
     padding: 40px 0;
-    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
-    background-color: rgba(140, 0, 2, 1);
-    background-size: 40px 40px;
-    background-position: center center;
 }
 .reviews h2{
     color: #ffd800;
@@ -319,10 +317,6 @@ img{
 }
 .wallet-footer{
     padding: 20px 0;
-    background: linear-gradient(rgba(255, 0, 0, .1) 50%, transparent 50% ), linear-gradient(90deg, rgba(255, 0, 0, .1) 50%, transparent 50%);
-    background-color: rgba(140, 0, 2, 1);
-    background-size: 40px 40px;
-    background-position: center center;
     flex: 0 0 auto;
 }
 .footer-links{
