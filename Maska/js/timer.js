@@ -5,7 +5,7 @@ function timeDiff(date1, date2) {
 //запуск таймера
 let timer = setInterval(function () {
     let currentDate = new Date();
-    let endDate = new Date(2020, 11, 31, 23, 59, 59);
+    let endDate = new Date(2021, 0, 31, 23, 59, 59);
     let diffTime = timeDiff(currentDate, endDate);
 
     if(diffTime <= 0){
