@@ -10,7 +10,7 @@ let timer = setInterval(function () {
 
     if(diffTime <= 0){
         clearInterval(timer);
-        alert('Time out');
+        //alert('Time out');
     }else{
         let res = new Date(diffTime);
         document.getElementById('days').innerHTML = res.getDate() - 1;

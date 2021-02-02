@@ -86,8 +86,8 @@ img{
     background-origin: padding-box, border-box, border-box, border-box, border-box;
 }
 .white-block-1{
-    position: relative;
     padding: 45px 0;
+    position: relative;
 }
 .white-block-1-text h2{
     font-size: 30px;
