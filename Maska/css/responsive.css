@@ -129,7 +129,6 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        background: sandybrown;
     }
     .header-menu .navbar-expand-md .navbar-brand{
         color: #000;
@@ -144,9 +143,14 @@
     .header-menu .navbar-expand-md .navbar-toggler i:hover{
         color: #ffeb3b;
     }
+    .header-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
     .header-art {
         font-size: 16px;
-        margin-left: 24px;
+        text-align: center;
         margin-top: 0;
     }
     .header-phone {
@@ -239,12 +243,7 @@
         position: relative;
     }
     .effect-carrot{
-        width: 50%;
-        margin: 0 auto;
-        position: absolute;
-        top: -177px;
-        opacity: .3;
-        left: 126px;
+        display: none;
     }
 }
 @media(max-width: 575px){
@@ -301,14 +300,12 @@
 @media(max-width: 450px){
     .header-phone {
         font-size: 12px;
-        margin-top: 15px;
     }
     .header-tab{
-        font-size: 10px;
-        margin-top: 10px;
+        font-size: 12px;
     }
     .header-art{
-        font-size: 10px;
+        font-size: 12px;
     }
     .mask-adv-box h2 {
         font-size: 20px;
