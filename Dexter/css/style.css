@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.for-page{
+    background: #818182;
+}
+.page{
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    padding-top: 40px;
+    padding-bottom: 78px;
+    background: url("../img/back.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.header .header-logo{
+    margin-bottom: 30px;
+}
+.header .header-text{
+    margin-top: 180px;
+}
+.header .header-text-dex{
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+.header .header-text-dex h1{
+    font-family: 'Asap Bold';
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+.header .header-text-brought p{
+    font-size: 18px;
+}
+.header .header-text-brought{
+    margin-bottom: 40px;
+}
+.header .header-button{
+    margin-bottom: 210px;
+}
+.blue-button{
+    max-width: 200px;
+    width: 100%;
+    padding: 15px;
+    font-family: 'Asap Bold';
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: #49b9e6;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.header-text-down{
+    font-size: 15px;
+}
+.down-text{
+    font-family: "Asap Regular";
+}
+.facebook-button{
+    padding: 3px;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: -40px;
+}
+.header-text-down .fa{
+    padding: 5px;
+    width: 25px;
+    text-align: center;
+}
+.header-text-down .fa-facebook {
+    background: #3B5998;
+    color: #fff;
+}
+.facebook-text{
+    color: #3B5998;
+    margin-left: 15px;
+}
+.twitter-button{
+    padding: 3px;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: -35px;
+}
+.header-text-down .fa-twitter{
+    color: #00aced;
+}
+.twitter-text{
+    color: #000;
+}
+.header-text-down a{
+    text-decoration: none;
+}
+.facebook-count{
+    margin-left: -23px;
+    background: #fff;
+    color: #000;
+    padding: 3px;
+    border: 1px solid #c1c1c1;
+    width: 35px;
+}
+.twitter-count{
+    margin-left: -23px;
+    background: #fff;
+    color: #000;
+    padding: 3px;
+    border: 1px solid #c1c1c1;
+    width: 35px;
+}
+.blue-block{
+    background: #0084b8;
+    padding: 100px 0;
+}
+.blue-block .blue-block-content .row{
+    align-items: flex-end;
+}
+.blue-block-container{
+    text-align: center;
+    color: #fff;
+}
+.blue-block-img{
+    margin-bottom: 30px;
+}
+.blue-block-container .blue-block-ltext{
+    font-family: "Asap Bold";
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.blue-block-container .blue-block-stext{
+    font-size: 18px;
+}
+.white-block{
+    padding: 100px 0;
+    background: #fff;
+}
+.white-block h2{
+    font-family: "Asap Bold";
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+.white-block-right-text{
+    font-size: 18px;
+    font-family: "Asap Regular";
+    margin-bottom: 40px;
+}
+.white-block-gray{
+    max-width: 490px;
+    border-radius: 10px;
+    background: #ecf0f1;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 25px;
+}
+.white-block-gray-text{
+    font-size: 18px;
+    font-family: "Asap Italic";
+}
+.white-block-gray-img{
+    border: 10px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -45px;
+    bottom: -45px;
+}
+.white-link{
+    font-family: "Asap Regular";
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.white-block-container .white-block-img{
+    margin-top: 55px;
+}
+.white-block-container{
+    margin-bottom: 160px;
+}
+.white-block-container1 .white-block-img{
+    text-align: right;
+}
+.white-block-left-text{
+    font-family: "Asap Regular";
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.white-block-left{
+    margin-top: 80px;
+}
+.grey-block{
+    background: #ecf0f1;
+    padding: 100px 0;
+}
+.grey-block-content{
+    text-align: center;
+}
+.grey-block-content .different{
+    text-align: left;
+}
+.grey-block-img-box{
+    max-width: 210px;
+    width: 100%;
+    padding-top: 60%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.blue-circle{
+    background: #00a3e4;
+}
+.yellow-circle{
+    background: #f1c40f;
+}
+.beige-circle{
+    background: #e6ba8c;
+}
+.grey-block-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.dexter-img{
+    left: -17px;
+    top: 35px;
+}
+.bee-img{
+    left: -78px;
+    top: 35px;
+}
+.mandark-img{
+    left: 29px;
+    top: 5px;
+}
+.grey-block-title h2{
+    font-family: "Asap Bold";
+    font-size: 35px;
+}
+.grey-block-title h4{
+    font-family: "Asap Italic";
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+.grey-block-text{
+    font-family: "Asap Regular";
+    font-size: 18px;
+    max-width: 200px;
+    margin: 0 auto;
+    max-height: 155px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.grey-block-link a{
+    font-family: "Asap Regular";
+    font-size: 18px;
+    color: #2fb2e7;
+}
+.grey-block-link a:hover{
+    cursor: pointer;
+}
+.yellow-block{
+    background: #f1c40f;
+    padding: 50px 0;
+    color: #fff;
+}
+.yellow-block-text{
+    font-family: "Asap Bold";
+    font-size: 30px;
+    text-align: center;
+}
+.yellow-text{
+    margin-right: 40px;
+}
+.footer{
+    padding: 70px 0;
+    background: #d8af0c;
+    color: #fff;
+    flex: 0 0 auto;
+}
+/*.footer-block{
+    display: flex;
+    justify-content: center;
+}*/
+.footer .footer-block-icon .fa{
+    font-size: 30px;
+}
+.footer-block-info h3{
+    font-size: 20px;
+    font-family: "Asap Bold";
+}
+.footer-block-info{
+    margin-left: 30px;
+}
+.footer-block-text{
+    font-family: "Asap Regular";
+    font-size: 16px;
+    max-width: 200px;
+}
+.footer-block-text p{
+    margin-bottom: 3px;
+}
+

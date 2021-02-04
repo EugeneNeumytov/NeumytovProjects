@@ -1,0 +1,655 @@
+Index: ../Homework 27/Map.html
+===================================================================
+--- ../Homework 27/Map.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 27/Map.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,23 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Map</title>
+-</head>
+-<script>
+-    let arr = [5, 80, -44, 120,60,-5, 206];
+-    let result = arr.map(function (element) {
+-        return element/5;
+-    })
+-    console.log(result);
+-
+-    // Получение максимального числа
+-    function getMax(array) {
+-        return Math.max.apply(null, array);
+-    }
+-    console.log(getMax(arr));
+-</script>
+-<body>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 26/Object_salaries.html
+===================================================================
+--- ../Homework 26/Object_salaries.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 26/Object_salaries.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,23 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Object_salaries</title>
+-</head>
+-<script>
+-    let salaries = {
+-        Alex: 100,
+-        Alena: 160,
+-        Peter: 130
+-    };
+-    let sum = 0;
+-    let i;
+-    for (i in salaries){
+-        sum += salaries[i];
+-    }
+-    alert('General Salary = ' + sum);
+-</script>
+-<body>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 29/calculator.html
+===================================================================
+--- ../Homework 29/calculator.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 29/calculator.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,103 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Calculator</title>
+-</head>
+-<style>
+-    .my-calculator{
+-        width: 500px;
+-        margin: 0 auto;
+-        text-align: center;
+-        background: #ffe09a;
+-        padding: 20px;
+-        border: 1px solid #000;
+-        border-radius: 10px;
+-    }
+-    .my-calculator .button-block button{
+-        width: 40px;
+-        height: 40px;
+-        margin: 20px;
+-    }
+-    .my-calculator .inputs-calculator .input-calculator{
+-        display: inline-block;
+-        padding: 10px;
+-    }
+-    .my-calculator .inputs-calculator .input-calculator label{
+-        display: block;
+-    }
+-    .my-calculator .result{
+-        width: 300px;
+-        margin: 0 auto;
+-        display: flex;
+-        justify-content: space-between;
+-        font-size: 24px;
+-        color: red;
+-        margin-top: 20px;
+-    }
+-    .my-calculator .result .reply{
+-        text-align: center;
+-        border: 1px solid red;
+-        border-radius: 5px;
+-        background: white;
+-        width: 170px;
+-        padding: 5px;
+-        margin-top: -5px;
+-    }
+-</style>
+-<body>
+-<main class="my-calculator">
+-    <div class="button-block">
+-        <button class="operator-btn">+</button>
+-        <button class="operator-btn">-</button>
+-        <button class="operator-btn">*</button>
+-        <button class="operator-btn">/</button>
+-    </div>
+-    <div class="separation">
+-        <hr />
+-    </div>
+-    <div class="inputs-calculator">
+-        <div class="input-calculator">
+-            <label>Number1</label>
+-            <input type="Number" value="0" id="number1">
+-        </div>
+-        <div class="input-calculator">
+-            <label>Number2</label>
+-            <input type="Number" value="0" id="number2">
+-        </div>
+-    </div>
+-    <div class = "result">
+-        Результат: <div class="reply" id="reply">0</div>
+-    </div>
+-</main>
+-</body>
+-<script>
+-    let buttons = document.getElementsByClassName('operator-btn');
+-    let sum = 0;
+-    
+-    function getButtonValue(text) {
+-        let operand1 = Number(document.getElementById('number1').value);
+-        let operand2 = Number(document.getElementById('number2').value);
+-        switch (text) {
+-            case '+': sum = operand1 + operand2;
+-                break;
+-            case '-': sum = operand1 - operand2;
+-                break;
+-            case '*': sum = operand1 * operand2;
+-                break;
+-            case '/': {
+-                if(operand2 == 0){
+-                    alert('На ноль делить нельзя');
+-                }else {
+-                    sum = operand1 / operand2;
+-                }
+-            }
+-                break;
+-        }
+-        document.getElementById('reply').innerHTML = sum;
+-    }
+-    for(let i = 0; i < buttons.length; i++){
+-        buttons[i].addEventListener('click', function (){getButtonValue(buttons[i].textContent);});
+-    }
+-</script>
+-</html>
+\ No newline at end of file
+Index: ../Homework 27/Associative.html
+===================================================================
+--- ../Homework 27/Associative.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 27/Associative.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,23 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Ассоциативные массивы</title>
+-</head>
+-<script>
+-    let arr = new Map([
+-        ['name', 'Vasiliy'],
+-        ['surname', 'Ivanov'],
+-        ['age', '30']
+-    ]);
+-    arr.set(['car', 'Audi']);
+-    arr.set(['child', 'true']);
+-    console.log(arr.size);
+-    arr.delete('age');
+-    arr.delete('child');
+-    arr.clear();
+-</script>
+-<body>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 26/array.html
+===================================================================
+--- ../Homework 26/array.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 26/array.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,17 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>array</title>
+-</head>
+-<script>
+-    let animals = ['Horse', 'Cow', 'Sheep'];
+-    animals.unshift('Goat', 'Pig');
+-    animals.push('Duck');
+-    animals.shift();
+-    alert(animals);
+-</script>
+-<body>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 29/.idea/.gitignore
+===================================================================
+--- ../Homework 29/.idea/.gitignore	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 29/.idea/.gitignore	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,5 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+Index: ../Homework 24/.idea/Homework23_1.iml
+===================================================================
+--- ../Homework 24/.idea/Homework23_1.iml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 24/.idea/Homework23_1.iml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="WEB_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/../Homework23_1/.tmp" />
+-      <excludeFolder url="file://$MODULE_DIR$/../Homework23_1/temp" />
+-      <excludeFolder url="file://$MODULE_DIR$/../Homework23_1/tmp" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: ../Homework 26/Object_user.html
+===================================================================
+--- ../Homework 26/Object_user.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 26/Object_user.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,20 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Object_user</title>
+-</head>
+-<script>
+-    const user = {
+-        name: 'Alex',
+-        age: 25
+-    };
+-    alert(user.name + " " + user.age + " years");
+-    user.name = 'Fedor';
+-    user.age = 30;
+-    alert(user.name + " " + user.age + " years");
+-</script>
+-<body>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 25/if_else.html
+===================================================================
+--- ../Homework 25/if_else.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 25/if_else.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,19 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>HW25</title>
+-</head>
+-<body>
+-<script>
+-    let browser = prompt("Каким браузером Вы пользуетесь?",'');
+-    if(browser === 'Edge'){
+-        alert('Ваш браузер '+browser);
+-    }else if(browser === 'Chrome' || browser === 'fireFox' || browser === 'Safari' || browser === 'Opera'){
+-        alert('Ваши браузеры');
+-    }else{
+-        alert("Таких браузеров к сожалению нет, Вы ошиблись");
+-    }
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 28/index.html
+===================================================================
+--- ../Homework 28/index.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 28/index.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,40 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>HW28</title>
+-</head>
+-<style>
+-    input{
+-        margin-bottom: 10px;
+-        padding: 10px;
+-    }
+-    label{
+-        display: none;
+-    }
+-</style>
+-<body>
+-<div>
+-    <input value="Eugene" id="first-name"><label id="lab1" for="first-name">Eugene</label>
+-</div>
+-<div>
+-    <input value="Neumytov" id="last-name"><label id="lab2" for="last-name">Neumytov</label>
+-</div>
+-<div>
+-    <input value="Dniprorudne" id="city"><label id="lab3" for="city">Dniprorudne</label>
+-</div>
+-<div>
+-    <button id="click-btn">Click Send</button>
+-</div>
+-<script>
+-    function showLabel() {
+-        document.getElementById('lab1').style.display = 'inline-block';
+-        document.getElementById('lab2').style.display = 'inline-block';
+-        document.getElementById('lab3').style.display = 'inline-block';
+-    }
+-
+-    let sendBtn = document.getElementById('click-btn');
+-    sendBtn.addEventListener('click', showLabel);
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 29/.idea/modules.xml
+===================================================================
+--- ../Homework 29/.idea/modules.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 29/.idea/modules.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/Homework 29.iml" filepath="$PROJECT_DIR$/.idea/Homework 29.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Homework 29/carousel.html
+===================================================================
+--- ../Homework 29/carousel.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 29/carousel.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,113 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Slider</title>
+-</head>
+-<style>
+-    img{
+-        max-width: 100%;
+-        width: auto;
+-        height: auto;
+-    }
+-    .mainacad-slider{
+-        width: 800px;
+-        margin: 0 auto;
+-        text-align: center;
+-        display: flex;
+-        position: relative;
+-    }
+-    .click-prev, .click-next {
+-        background: rgba(0,0,0,0);
+-        cursor: pointer;
+-        position: absolute;
+-        top: 50%;
+-        width: auto;
+-        margin-top: -22px;
+-        color: white;
+-        font-weight: bold;
+-        font-size: 18px;
+-        transition: 0.6s ease;
+-        outline: none;
+-        border: none;
+-
+-    }
+-    .click-next{
+-        right: 0;
+-    }
+-    .slider-icons{
+-        width: 500px;
+-        margin: 20px auto;
+-        display: flex;
+-        justify-content: space-around;
+-    }
+-    .slider-img{
+-        width: 100px;
+-    }
+-
+-</style>
+-<body>
+-<div class="mainacad-slider">
+-    <img id="slider-img" src="">
+-    <button class="click-prev" id="click-prev">&#10094</button>
+-    <button class="click-next" id="click-next">&#10095</button>
+-</div>
+-<div class="slider-icons">
+-    <div class="slider-img"><img class="slider-icon" id="slider-icon1" src=""></div>
+-    <div class="slider-img"><img class="slider-icon" id="slider-icon2" src=""></div>
+-    <div class="slider-img"><img class="slider-icon" id="slider-icon3" src=""></div>
+-    <div class="slider-img"><img class="slider-icon" id="slider-icon4" src=""></div>
+-</div>
+-</body>
+-<script>
+-    let prevBtn = document.getElementById('click-prev');
+-    let nextBtn = document.getElementById('click-next');
+-    let slideImg = document.getElementById('slider-img');
+-
+-    prevBtn.addEventListener('click', onPrevBtnClick);
+-    nextBtn.addEventListener('click', onNextBtnClick);
+-
+-    let imgUrl = [];
+-    imgUrl.push('https://rating-avto.ru/wp-content/uploads/2019/04/Koenigsegg-Agera-RS-1.jpg');
+-    imgUrl.push('https://rating-avto.ru/wp-content/uploads/2019/04/Bugatti-Veyron-Super-Sport.jpg');
+-    imgUrl.push('https://rating-avto.ru/wp-content/uploads/2019/04/Hennessey-Venom-GT-1.jpg');
+-    imgUrl.push('https://rating-avto.ru/wp-content/uploads/2019/04/SSC-Ultimate-Aero-TT-1.jpg');
+-
+-    let sliderIcons = document.querySelectorAll('.slider-icon');
+-    for(let i = 0; i < sliderIcons.length; i++){
+-        console.log(sliderIcons[i]);
+-        sliderIcons[i].src = imgUrl[i];
+-    }
+-
+-    let currentIndex = 0;
+-    slideImg.src = imgUrl[currentIndex];
+-    prevBtn.disabled = true;
+-
+-    function showImage(id, i) {
+-        slideImg.src = document.getElementById(id).src;
+-        currentIndex = i;
+-    }
+-
+-    function onPrevBtnClick() {
+-        currentIndex--;
+-        nextBtn.disabled = false;
+-        slideImg.src = imgUrl[currentIndex];
+-        if(currentIndex === 0){
+-            prevBtn.disabled = true;
+-        }
+-    }
+-
+-    function onNextBtnClick() {
+-        currentIndex++;
+-        prevBtn.disabled = false;
+-        slideImg.src = imgUrl[currentIndex];
+-        if(currentIndex === (imgUrl.length - 1)){
+-            nextBtn.disabled = true;
+-        }
+-    }
+-
+-    for (let i = 0; i < sliderIcons.length; i++){
+-        sliderIcons[i].addEventListener('click', function () {showImage(sliderIcons[i].id, i);});
+-    }
+-</script>
+-</html>
+\ No newline at end of file
+Index: ../Homework 24/.idea/modules.xml
+===================================================================
+--- ../Homework 24/.idea/modules.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 24/.idea/modules.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/Homework23_1.iml" filepath="$PROJECT_DIR$/.idea/Homework23_1.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Homework 29/.idea/vcs.xml
+===================================================================
+--- ../Homework 29/.idea/vcs.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 29/.idea/vcs.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Homework 24/index.html
+===================================================================
+--- ../Homework 24/index.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 24/index.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,64 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Homework23-1</title>
+-</head>
+-<style>
+-    .form_box{
+-        background: violet;
+-        border: 1px solid red;
+-        border-radius: 10%;
+-        width: 200px;
+-        height: 300px;
+-    }
+-    .window{
+-        padding: 100px 0;
+-        max-width: 180px;
+-        margin: 0 auto;
+-    }
+-    .window input{
+-        margin-bottom: 10px;
+-    }
+-    .btn{
+-        width: 100px;
+-        margin: 0 auto;
+-        display: block;
+-    }
+-</style>
+-<body>
+-<script>
+-    let a = prompt('Угадайте число');
+-    if(a==10){
+-        alert('Верно')
+-    }else{
+-        alert('Неверно')
+-    }
+-</script>
+-
+-<div>
+-    <p>Lorem Ipsum Dolor Umet</p>
+-    <p>Lorem Ipsum Dolor Umet</p>
+-    <p id="paragraf">Lorem Ipsum Dolor Umet</p>
+-    <p>Lorem Ipsum Dolor Umet</p>
+-    <p>Lorem Ipsum Dolor Umet</p>
+-</div>
+-<script>
+-    let parag = document.getElementById('paragraf');
+-    parag.style.color = 'red';
+-    parag.style.fontSize = '20px';
+-</script>
+-
+-<form class="form_box">
+-    <div class="window">
+-        <input class="name" type="text" name="name" alt="name" placeholder="Имя">
+-        <input type="tel" name="phone" alt="phone" placeholder="+380xxxxxxxxx">
+-        <button class="btn" name="button">Отправить</button>
+-    </div>
+-</form>
+-<script>
+-    let name = document.querySelector('.name');
+-    name.placeholder = 'Eugene';
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 27/Function.html
+===================================================================
+--- ../Homework 27/Function.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 27/Function.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,25 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Function</title>
+-</head>
+-<body>
+-<div id="text">
+-    <p>Hello, World!</p>
+-</div>
+-<button id="btn" onclick="getText('text', 'btn')">Больше</button>
+-<script>
+-    document.getElementById("text").style.display = "none";
+-    function getText(id, id1) {
+-        if (document.getElementById(id).style.display === "none"){
+-            document.getElementById(id).style.display = "block";
+-            document.getElementById(id1).innerHTML = "Закрыть";
+-        }else{
+-            document.getElementById(id).style.display = "none";
+-            document.getElementById(id1).innerHTML = "Больше";
+-        }
+-    }
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 29/.idea/misc.xml
+===================================================================
+--- ../Homework 29/.idea/misc.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 29/.idea/misc.xml	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="JavaScriptSettings">
+-    <option name="languageLevel" value="ES6" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Homework 25/for.html
+===================================================================
+--- ../Homework 25/for.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 25/for.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
+@@ -1,16 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>HW25</title>
+-</head>
+-<body>
+-<script>
+-    let a = 5;
+-    for(let i = 0; i < 5; i++){
+-        alert(a * i);
+-    }
+-</script>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: ../Homework 35/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<style>\r\n    body{\r\n        background: url(\"img/back.jpg\");\r\n        background-size: cover;\r\n    }\r\n    h1{\r\n        text-align: center;\r\n        font-size: 90px;\r\n        font-weight: 700;\r\n        letter-spacing: 15px;\r\n        background: linear-gradient(45deg, royalblue, darkcyan 50%, royalblue);\r\n        -webkit-background-clip: text;\r\n        -webkit-text-fill-color: transparent;\r\n    }\r\n    img{\r\n        max-width: 100%;\r\n        width: auto;\r\n        height: auto;\r\n    }\r\n    #imgContainer{\r\n        margin: 0 auto;\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n        justify-content: center;\r\n    }\r\n    .image img{\r\n        width: 150px;\r\n        height: 100px;\r\n        border-radius: 10px;\r\n    }\r\n    .image{\r\n        width: 150px;\r\n        height: 100px;\r\n        font-size: 24px;\r\n        position: relative;\r\n        margin: 10px;\r\n    }\r\n    .overlay {\r\n        position: absolute;\r\n        top: 0;\r\n        left: 0;\r\n        right: 0;\r\n        background-color: rgba(0, 0, 0, .5);\r\n        width: 100%;\r\n        height: 100%;\r\n        transition: .5s ease;\r\n        display: none;\r\n        color: #fff;\r\n        text-align: center;\r\n        border-radius: 10px;\r\n    }\r\n    .modal {\r\n        display: none;\r\n        position: fixed;\r\n        z-index: 1;\r\n        padding-top: 100px;\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 100%;\r\n        overflow: auto;\r\n        background-color: rgb(0,0,0);\r\n        background-color: rgba(0,0,0,0.9);\r\n    }\r\n\r\n    .modal-content {\r\n        margin: auto;\r\n        display: block;\r\n        width: 80%;\r\n        max-width: 700px;\r\n        border: 10px solid #fff;\r\n        border-radius: 20px;\r\n    }\r\n    #close{\r\n        color: red;\r\n        float: right;\r\n        font-size: 60px;\r\n        font-weight: bold;\r\n        cursor: pointer;\r\n    }\r\n\r\n    #modal-label{\r\n        text-align: center;\r\n        width: 25%;\r\n        color: antiquewhite;\r\n        margin: 0 auto;\r\n        margin-top: 20px;\r\n        border: 2px solid #fff;\r\n        border-radius: 10px;\r\n        padding: 10px 0;\r\n        font-size: 24px;\r\n    }\r\n</style>\r\n<body>\r\n<h1>Ретро Автомобили</h1>\r\n<div id=\"imgContainer\">\r\n    <div class=\"image\"><img src=\"img/photo_1.jpg\" alt=\"Buick Super\" title=\"Buick Super\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/niva.jpg\" alt=\"Niva\" title=\"Нива ВАЗ-2121\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/mercury.jpg\" alt=\"Mercury\" title=\"Mercury\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/volga.jpg\" alt=\"Volga\" title=\"Волга ГАЗ-21\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/vw-beatle.jpg\" alt=\"VW Beatle\" title=\"VW Beatle\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/morgan.jpg\" alt=\"Morgan\" title=\"Morgan\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/thunderbird.jpg\" alt=\"Thunderbird\" title=\"Thunderbird\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/rolls-royse.jpg\" alt=\"Rolls Royce\" title=\"Rolls Royce\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/zhiguli.jpg\" alt=\"Zhiguli\" title=\"Жигули ВАЗ-21011\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n    <div class=\"image\"><img src=\"img/cadillac.jpg\" alt=\"Cadillac\" title=\"Cadillac\">\r\n        <div class=\"overlay\">\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"myModal\" class=\"modal\">\r\n    <span id=\"close\">&times;</span>\r\n    <img class=\"modal-content\" id=\"modalImg\">\r\n    <div id=\"modal-label\"></div>\r\n</div>\r\n\r\n<script>\r\n    let imgContainer = document.getElementById('imgContainer');\r\n    let modal = document.getElementById('myModal');\r\n    let span = document.getElementById('close');\r\n    let modalImg = document.getElementById('modalImg');\r\n    let overlay = document.querySelectorAll('.overlay');\r\n    let label = document.getElementById('modal-label');\r\n\r\n    imgContainer.addEventListener('mouseover', showTitle);\r\n    imgContainer.addEventListener('click', showModal);\r\n\r\n\r\n    function showTitle(event) {\r\n        let target = event.target;\r\n        if (target.tagName == 'IMG'){\r\n            target.parentElement.children[1].style.display = 'block';\r\n            target.parentElement.children[1].innerHTML = target.title;\r\n        }\r\n    }\r\n    function showModal(event) {\r\n        let target = event.target;\r\n        if (target.className == 'overlay'){\r\n            modal.style.display = 'block';\r\n            modalImg.src = target.parentElement.firstChild.src;\r\n            label.innerHTML = target.parentElement.firstChild.title;\r\n        }\r\n    }\r\n    span.onclick = function () {\r\n        modal.style.display = 'none';\r\n    }\r\n\r\n    for (let i = 0; i < overlay.length; i++){\r\n        overlay[i].onmouseout = function () {\r\n            overlay[i].style.display = 'none';\r\n        }\r\n    }\r\n\r\n\r\n</script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Homework 35/index.html	(revision e3240bcf3c68e7e01f9498e2bd53c8e29e6fbf43)
++++ ../Homework 35/index.html	(date 1611851935247)
+@@ -154,6 +154,7 @@
+     let modalImg = document.getElementById('modalImg');
+     let overlay = document.querySelectorAll('.overlay');
+     let label = document.getElementById('modal-label');
++    let overOut;
+ 
+     imgContainer.addEventListener('mouseover', showTitle);
+     imgContainer.addEventListener('click', showModal);

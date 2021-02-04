@@ -1,0 +1,458 @@
+@media(max-width: 1199px){
+    .header .header-button {
+        margin-bottom: 90px;
+    }
+    .grey-block-img-box{
+        padding-top: 70%;
+    }
+}
+
+@media(max-width: 991px){
+    .header .header-text-dex h1{
+        font-size: 40px;
+    }
+    .header .header-text {
+        margin-top: 110px;
+    }
+    .header .header-text-dex {
+        margin-bottom: 20px;
+        max-width: 322px;
+    }
+    .header .header-text-brought {
+        margin-bottom: 20px;
+    }
+    .header .header-text-brought p {
+        font-size: 16px;
+    }
+    .header .header-button {
+        margin-bottom: 70px;
+    }
+    .blue-button {
+        max-width: 165px;
+        padding: 12px;
+        font-size: 17px;
+    }
+    .down-text{
+        font-size: 12px;
+    }
+    .header-text-down .fa {
+        padding: 1px;
+        width: 17px;
+    }
+    .facebook-text {
+        font-size: 12px;
+        margin-left: 11px;
+    }
+    .facebook-button {
+        padding: 1px;
+        margin-left: -40px;
+    }
+    .facebook-count {
+        font-size: 14px;
+        padding: 1px;
+        margin-left: -29px;
+    }
+    .twitter-text {
+        font-size: 10px;
+    }
+    .twitter-button {
+        padding: 1px;
+        margin-left: -32px;
+    }
+    .twitter-count {
+        font-size: 14px;
+        margin-left: -27px;
+        padding: 1px;
+        width: 29px;
+    }
+    .blue-block {
+        padding: 70px 0;
+    }
+    .white-block{
+        padding: 70px 0;
+    }
+    .white-block h2 {
+        font-size: 46px;
+        margin-bottom: 30px;
+    }
+    .white-block-right-text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .white-block-gray-text {
+        font-size: 16px;
+    }
+    .white-block-gray-img {
+        border: 7px solid #fff;
+        right: -30px;
+        bottom: -50px;
+    }
+    .white-block-container {
+        margin-bottom: 100px;
+    }
+    .white-block-left-text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .white-block-gray {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .white-block-left {
+        margin-top: 0;
+    }
+    .grey-block-img-box{
+        padding-top: 100%;
+    }
+    .bee-img {
+        left: -49px;
+        top: 41px;
+    }
+    .yellow-block-text{
+        font-size: 24px;
+    }
+}
+@media(max-width: 767px){
+    .header {
+        padding-top: 25px;
+        padding-bottom: 55px;
+    }
+    .header .header-text-dex h1 {
+        font-size: 32px;
+    }
+    .header .header-text {
+        margin-top: 65px;
+    }
+    .facebook-button{
+        margin-left: 0;
+        padding: 2px;
+    }
+    .facebook-text {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .facebook-count {
+        padding: 3px;
+        margin-left: -28px;
+    }
+    .twitter-button{
+        margin-left: 0;
+        padding: 2px;
+    }
+    .twitter-text {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .twitter-count {
+        padding: 3px;
+        width: 30px;
+    }
+    .header-text-down .fa {
+        padding: 5px;
+        width: 25px;
+    }
+    .header .header-button {
+        margin-bottom: 20px;
+    }
+    .blue-block {
+        padding: 50px 0;
+    }
+    .blue-block-container .blue-block-ltext {
+        font-size: 48px;
+    }
+    .blue-block-container .blue-block-stext {
+        font-size: 16px;
+    }
+    .white-block h2 {
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+    .white-block-right-text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .white-block-gray-text {
+        font-size: 14px;
+    }
+    .white-block-gray-img {
+        border: 5px solid #fff;
+        right: -14px;
+    }
+    .white-link{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .white-block-container {
+        margin-bottom: 60px;
+    }
+    .grey-block {
+        padding: 55px 0;
+    }
+    .bee-img {
+        left: -34px;
+        top: 33px;
+    }
+    .dexter-img {
+        left: -8px;
+        top: 32px;
+        width: 94%;
+    }
+    .grey-block-text {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .yellow-block {
+        padding: 30px 0;
+    }
+    .yellow-text {
+        margin-right: 25px;
+    }
+    .yellow-block-text {
+        font-size: 16px;
+    }
+    .footer{
+        padding: 20px 0;
+    }
+    .footer .footer-block-icon .fa {
+        font-size: 25px;
+    }
+    .footer-block-info h3 {
+        font-size: 18px;
+    }
+    .footer-block-text{
+        font-size: 12px;
+    }
+    .addition{
+        margin-left: -116px;
+    }
+}
+@media(max-width: 575px){
+    .header {
+        padding-bottom: 25px;
+    }
+    .header .header-text-dex h1 {
+        font-size: 28px;
+        line-height: 1;
+    }
+    .header .header-logo {
+        margin-bottom: 20px;
+    }
+    .header .header-text {
+        margin-top: 35px;
+    }
+    .header .header-text-dex {
+        margin-bottom: 14px;
+    }
+    .header .header-text-brought p {
+        font-size: 14px;
+    }
+    .header .header-text-brought {
+        margin-bottom: 14px;
+    }
+    .blue-button {
+        max-width: 120px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .header .header-button {
+        margin-bottom: 80px;
+    }
+    .header-text-down .fa {
+        padding: 5px;
+        width: 22px;
+    }
+    .facebook-text {
+        margin-left: 11px;
+    }
+    .twitter-button {
+        width: 70px;
+    }
+    .facebook-count {
+        padding: 2px;
+        font-size: 16px;
+    }
+    .twitter-count {
+        padding: 2px;
+        width: 30px;
+        margin-left: -47px;
+        font-size: 15px;
+    }
+    .blue-block {
+        padding: 20px 0;
+    }
+    .blue-block-container .blue-block-ltext {
+        font-size: 36px;
+    }
+    .blue-block-container .blue-block-stext {
+        font-size: 10px;
+    }
+    .white-block {
+        padding: 20px 0;
+    }
+    .white-block-container .white-block-img {
+        margin-top: 0;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .white-block h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .white-block-right{
+        text-align: center;
+    }
+    .white-block-right-text {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .white-block-gray-text {
+        font-size: 12px;
+    }
+    .white-block-gray {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .white-link {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .white-block-gray-img img{
+        width: 80%;
+    }
+    .white-block-gray-img {
+        right: -33px;
+        top: 50px;
+    }
+    .white-block-left {
+        text-align: center;
+    }
+    .white-block-left-text {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .white-block-container1 .white-block-img {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .white-block .white-block-container1 .row{
+        flex-direction: column-reverse;
+    }
+    .grey-block {
+        padding: 20px 0;
+    }
+    .grey-block-title h2 {
+        font-size: 24px;
+    }
+    .grey-block-title h4 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .grey-block-text {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .dexter-img {
+        left: -2px;
+        top: 19px;
+    }
+    .bee-img {
+        left: -30px;
+        top: 21px;
+    }
+    .mandark-img {
+        left: 12px;
+        top: 4px;
+        width: 78%;
+    }
+    .grey-block-link a {
+        font-size: 14px;
+    }
+    .yellow-block {
+        padding: 20px 0;
+    }
+    .yellow-block-text {
+        font-size: 12px;
+    }
+    .footer .footer-block-icon .fa {
+        font-size: 20px;
+    }
+    .footer-block-info h3 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .footer-block-text {
+        font-size: 10px;
+    }
+    .footer-block-text p {
+        margin-bottom: 0;
+    }
+    .footer-block{
+        margin-bottom: 5px;
+    }
+    .addition {
+        margin-left: -96px;
+    }
+    .addition1{
+        margin-left: 40px;
+    }
+}
+@media(max-width: 450px){
+    .header {
+        padding-bottom: 25px;
+    }
+    .header .header-text-dex h1 {
+        font-size: 26px;
+        line-height: 1;
+    }
+    .header .header-logo {
+        margin-bottom: 20px;
+    }
+    .header .header-text {
+        margin-top: 30px;
+    }
+    .header .header-text-dex {
+        margin-bottom: 5px;
+    }
+    .header .header-text-brought p {
+        font-size: 11px;
+    }
+    .header .header-text-brought {
+        margin-bottom: 14px;
+    }
+    .blue-button {
+        max-width: 120px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .header .header-button {
+        margin-bottom: 10px;
+    }
+    .down-text {
+        font-size: 8px;
+    }
+    .header-text-down .fa {
+        padding: 3px;
+        width: 19px;
+    }
+    .facebook-text {
+        margin-left: 11px;
+    }
+    .twitter-button {
+        width: 60px;
+    }
+    .facebook-count {
+        padding: 2px;
+        font-size: 14px;
+    }
+    .twitter-count {
+        padding: 2px;
+        width: 30px;
+        margin-left: -21px;
+        font-size: 14px;
+    }
+    .white-block-gray-img {
+        right: -17px;
+        top: 81px;
+    }
+}
